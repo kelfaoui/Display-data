@@ -1,0 +1,137 @@
+/* 
+Définir le css pour le Popup
+Avec une position: Fixed
+Un arrondi et un Box
+Shadow (Ombre)
+*/
+.popup {
+  width: 600px;
+  height: 600px;
+  position: fixed; 
+  border-radius: 10px;
+  border: 1px solid #eee;
+  background: #ffffff;
+  box-shadow: 5px 5px 10px #d9d9d9, -5px -5px 10px #ffffff
+}
+
+/*
+Centrer le div..
+*/
+.center {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%)
+}
+
+/*
+Un div pour contenir
+les colonnes de la fenetre
+Display Flex et un Flex Flow
+*/
+
+.row {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  align-content: space-between 
+}
+
+/*
+Colonne du des PieCharts
+*/
+.col {
+  width: 230px;
+  margin: 20px 35px;
+  background: #FFFFFF;
+  box-shadow: 2px 2px 4px #d9d9d9,
+    -2px -2px 4px #ffffff;
+  border-radius: 10px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  text-align: center
+}
+
+/*
+Colonne du haut
+*/
+.col-top {
+  width: 160px; /* Définir la largeur du widget*/
+  margin: 20px 20px;
+  background: #FFFFFF;
+  box-shadow: 2px 2px 4px #d9d9d9,
+    -2px -2px 4px #ffffff;
+  border-radius: 10px;
+  height: 120px;
+  display: flex;
+  flex-direction: column; /* Direction du flexbox*/
+  flex-wrap: wrap;
+  text-align: center;
+  align-content: space-between /* Laissez le meme espace entre les divs */
+}
+
+/*
+Pour le score
+*/
+.score {
+  padding: 20px;
+  margin-top: 15px;
+  border-right: 1px dashed #999
+}
+
+.score-top span {
+  font-weight: bold;
+  color: darkgreen;
+  text-align: center;
+  font-size: 0.95rem;
+  width: 50px;
+  margin-top: 30px
+}
+
+.score span {
+  font-weight: bold;
+  color: darkgreen
+}
+
+/*CSS pour l'image*/
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px
+}
+
+/* Text sur la gauche*/
+.text-start {
+  text-align: left;
+  font-size: 0.9rem;
+  padding: 10px
+}
+
+/* Centrer le text */
+.text-center {
+  text-align: center
+}
+
+/* Ne pas afficher le poopup */
+.d-none {
+  display: none
+}
+
+/* Afficher le popup */
+.d-block {
+  display: block
+}
+
+/**/
+.btn {
+  background: darkolivegreen;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  font-weight: bold;
+}
